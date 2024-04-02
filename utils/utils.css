@@ -1,0 +1,17 @@
+
+:root {
+   --light-background-color: #2A2C39;
+   --dark-background-color: #252734;  
+   --text-color: #858792;
+   --white-color: #fff;
+   --font-family-Playfair: 'Playfair Display', serif;
+   --font-family-Nunito: 'Nunito', sans-serif;
+ } 
+   
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-background-color);
+}
+ 
+ 

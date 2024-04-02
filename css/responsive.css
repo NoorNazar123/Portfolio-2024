@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+  .navbar-nav {
+    display: none;
+  }
+  .navbar-right {
+   display: none;
+ }
+ .hamburger{
+   display: block;
+ }
+}

@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light-background-color);
+  font-family: var(--font-family-Nunito);
+}
+.wrapper {
+  width: 100%;
+}
+
+/* -----------------------header section--------------------------- */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 10px;
+  background-color: var(--dark-background-color);
+  color: white;
+  box-shadow: 1px 2px 9px var(--text-color);
+  margin-bottom: 1px;
+  
+}
+
+.navbar-left img {
+  width: 12rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transfrom .5s ease-in-out;
+}
+.navbar-left:hover{
+  transform: scale(1.1);
+}
+
+.navbar-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-nav li {
+  margin: 0 15px;
+}
+
+.navbar-nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-color);
+  transition: color .5s ease;
+}
+.navbar-nav a:hover {
+  color: #fff;
+
+}
+.navbar-right {
+  display: flex;
+  justify-content: center;
+  gap: .50rem;
+  width: 10rem;
+  border-radius: 50px;
+  padding: 15px 10px;
+  cursor: pointer;
+  border: 1px solid var(--text-color);
+  background-color: var(--dark-background-color);
+  transition: box-shadow 1s ease, color;
+
+}
+.navbar-right:hover {
+  box-shadow: 1px 2px 8px var(--text-color);
+  color: var(--white-color);
+}
+.navbar-right span{
+  color: var(--text-color);
+  transform: translateX(0rem);
+  transition: transform 1s ease-in-out ;
+}
+.navbar-right:hover span{
+  transform: translateX(.50rem);
+  color: var(--white-color); 
+  
+}
+.hire-me-btn {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 1s ease ;
+}
+.navbar-right:hover .hire-me-btn{ 
+  color: var(--white-color);
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.burgur {
+  width: 100%;
+  height: 4px;
+  margin: 7px 0;
+  background-color: #fff;
+  border-radius: 2px;
+ 
+}
