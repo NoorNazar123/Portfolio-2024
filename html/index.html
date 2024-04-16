@@ -6,46 +6,96 @@
     <title>Portfolio@2024</title>
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../utils/utils.css" />
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap">
-   
-
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/heroSection.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head> 
-  <body> 
-    <div> 
-      <div class="wrapper">
-        <header class="navbar">
+  <body>
+    <header class="navbar">
+    
+       <div title="My_logo" class="navbar-left">
+         <img src="../images/Logof.png" alt="myLogo" />
+       </div>
+       <nav class="navbar-nav">
+         <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Service</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Skills</a></li>
+         </ul>
+         <div class="navbar-right">
+           <a href="#" class="hire-me-btn">Hire Me</a
+           ><span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+         </div>
+       </nav>
+       <div class="hamburger">
+         <div class="burgur"></div>
+         <div class="burgur"></div>
+         <div class="burgur"></div>
+     
+     </div>
 
-          <div class="navbar-left">  
-            <img src="../images/Logof.png" alt="myLogo" />     
-          </div>
-          <nav class="navbar-nav">
-            <ul>  
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Skills</a></li>
-            </ul>
-          </nav>
-          <div class="navbar-right">
-            <a href="#" class="hire-me-btn">Hire Me</a><span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-          </div>
-          <div class="hamburger"> 
-            <div class="burgur"></div>
-            <div class="burgur"></div>
-            <div class="burgur"></div>
-          </div> 
-        </header>
+    </header> 
 
-        <main> 
-          <div class="container">
+    <main>
+      <section class="section_one center"> 
 
+        <div class="hero_desc">
+          <h2>Hi, I'm</h2>
+          <div class="typer">
+            <h2 class="text">Noor e Nazar</h2>
           </div>
-        </main>
-      </div>
-    </div>
+          <h1>Passionate React.js Developer</h1>
+          <p class="text_style">
+            UI/UX designer eager to create engaging user experiences website,
+            and grow in Web development.
+          </p>
+        </div>
+        <div class="hero_image">
+          <img src="/images/heroImage.png" alt="#" width="300px" />
+        </div>
+        <div class="hero_icon"> 
+          <a href="https://www.linkedin.com/in/noor-nazar-20242b2a2/" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+         
+          <a href="https://github.com/NoorNazar123" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        
+          <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i> 
+          </a> 
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/profile.php?id=61553746727080" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>     
+        </div>
+
+      </section>
+    </main>
+
+    <script src="../javascript/index.js"></script>
   </body>
 </html>
