@@ -1,6 +1,6 @@
 :root {
   --light-background-color: #2a2c39;
-  --light-transparent-color: rgba(42, 44, 57, 0.5);
+  --light-transparent-color: rgba(0, 0, 0, 20);
   --dark-background-color: #252734;
 
   --text-color: #858792;
@@ -8,19 +8,27 @@
   --font-family-Playfair: "Playfair Display", serif;
   --font-family-Nunito: "Nunito", sans-serif;
 }
-
+.container {
+  width: 100%;
+  color: var(--white-color); 
+  font-family: var(  --font-family-Playfair );  
+  background-color: var(--dark-background-color);
+ 
+}
 .text_style {
-  width: 90%;
+  width: 90%; 
   font-family: var(--font-family-Nunito);
   font-weight: normal;
   letter-spacing: normal;
+  font-size: 18px;
   line-height: 1.5;
  
 }
 .center{
   width: 80%;
   margin: 0 auto;
-  display: grid;
-  place-items: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
  
 }

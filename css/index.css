@@ -21,7 +21,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 20rem;
+  
   padding: 5px 10px;
   background-color: var(--dark-background-color);
   color: white;

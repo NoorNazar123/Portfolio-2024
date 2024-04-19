@@ -1,13 +1,20 @@
-main{
-   width: 100%;
-   height: 100vh;
-   background-color: var(--dark-background-color);
- }
+
 .section_one {
+  
+   min-height: 100vh;
    color: var(--white-color); 
    font-family: var(  --font-family-Playfair );  
-}
+   display: grid; 
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(1, 1fr);
+   overflow: hidden;
 
+}
+.hero_desc{
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+}
 .hero_desc h2 {
   font-size: 5rem;
 }
@@ -19,15 +26,19 @@ main{
   padding-right: 5px;
 }
 
-.hero_image{
-  height: 500px;
-
-}
+ .hero_image{
+  height: 500px; 
+} 
 .hero_image img{
-  display: block;
+  width: 27rem;
 }
 .hero_icon{
-  display: none;
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 2rem;
+ transform: translate3d(-2rem, 0 , 0rem);
+  
 } 
 .hero_icon i{
   font-size: 3rem;
@@ -36,13 +47,13 @@ main{
   transition: color 0.5s ease-in-out, transform 0.5s ease-in-out; 
 }
 .hero_icon .social-icon:nth-child(2) {
-  transform: translateX(4rem);
+  transform: translateX(3rem);
 }
 .hero_icon .social-icon:nth-child(3) {
-  transform: translateX(7rem);
+  transform: translateX(5rem);
 }
 .hero_icon .social-icon:nth-child(4) {
-  transform: translateX(4rem);
+  transform: translateX(3rem);
 }
 
 .hero_icon i:hover {
@@ -81,34 +92,55 @@ main{
  }
 
 
- @media (min-width: 1000px) {
+ @media (max-width: 1100px) { 
   .section_one {
-
-    color: var(--white-color); 
-    font-family: var(  --font-family-Playfair );
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-   
+    place-items: center;
+    transform: translateX(1rem);
+    
  }
- .hero_desc{
-   grid-column-start: 1;
-   grid-column-end: 5;
-   transform: translateY(3rem);
- }
- .hero_image{
-  height: 500px; 
-} 
-.hero_image img{
-  width: 27rem;
+ .hero_image img{
+  width: 22rem;
+  transform: translateX(-1rem);
 }
 .hero_icon{
-  display: flex;
- flex-direction: column;
- align-items: center;
- gap: 2rem;
- transform: translateY(4rem);
+   display: none;
 } 
+
+
+}
+@media (max-width: 600px) { 
+
+  .section_one {
+
+    width: 100%;
+    
+
+ }
+ .hero_desc{
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  padding: 0 1rem;
+ }
+ .hero_desc h2 {
+  font-size: 11vw;
+}
+.hero_desc h1{
+  font-size: 6vw; 
+  margin-bottom: 1rem;
+}
+.hero_desc p{
+  font-size: 5vw;
+}
+.hero_image{
+  height: 500px;
+  width: 100%; 
+ 
+} 
+
 
 
 }
